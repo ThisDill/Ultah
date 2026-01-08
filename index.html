@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>Selamat Ulang Tahun Sayangku ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Audio Background -->
+    <audio id="bgMusic" loop>
+        <source src="music.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Halaman Utama -->
+    <div id="mainPage" class="page active">
+        <div class="hearts-bg"></div>
+        <div class="content-center">
+            <h1 class="main-title">Buat Sartikaa ❤️</h1>
+            <p class="subtitle">Orang yang spesial di hidupku</p>
+            <button id="startBtn" class="btn-start">Mulai</button>
+        </div>
+    </div>
+
+    <!-- Halaman 1 - Text Kiri, Gambar Kanan -->
+    <div id="page1" class="page">
+        <div class="hearts-bg"></div>
+        <div class="content-container left">
+            <div class="text-section">
+                <h2 class="page-title">Selamat Ulang Tahun Sayangku!</h2>
+                <div id="text1" class="animated-text"></div>
+            </div>
+            <div class="image-section">
+                <div class="image-frame">
+                    <img src="foto1.jpeg" alt="Birthday">
+                </div>
+            </div>
+        </div>
+        <button id="next1" class="btn-next hidden">Ketuk untuk melanjutkan →</button>
+    </div>
+
+    <!-- Halaman 2 - Gambar Kiri, Text Kanan -->
+    <div id="page2" class="page">
+        <div class="hearts-bg"></div>
+        <div class="content-container right">
+            <div class="image-section">
+                <div class="image-frame">
+                    <img src="foto2.jpeg" alt="Love">
+                </div>
+            </div>
+            <div class="text-section">
+                <h2 class="page-title">Hari Istimewamu</h2>
+                <div id="text2" class="animated-text"></div>
+            </div>
+        </div>
+        <button id="next2" class="btn-next hidden">Ketuk untuk melanjutkan →</button>
+    </div>
+
+    <!-- Halaman 3 - Terima Kasih -->
+    <div id="page3" class="page">
+        <div class="hearts-bg"></div>
+        <div class="content-center final">
+            <div class="thank-you-card">
+                <h2 class="page-title">Terima Kasih</h2>
+                <div id="text3" class="animated-text center"></div>
+                <div class="emoji-animation">❤️</div>
+                <button id="restartBtn" class="btn-restart">🔄 Kembali ke Awal</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
